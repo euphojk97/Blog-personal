@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500&display=swap');
+:root{
+    /* define las variables */
+    --header:#4b4c50;
+    --bloque1: #cac8c6;
+    --bloque2:#a19f9e;
+    --bloque3:#787675;
+    --bloque4:#4f4e4d;
+    --ahover    :white;
+    --h2bloque3:rgb(62, 44, 229);
+    --h2bloque4: rgb(56, 8, 153);
+    --footer:#252525;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* calcula el tamaño total de un elemento  */
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Chakra Petch', sans-serif;
+}
+html{
+    
+        scroll-behavior: smooth;
+    }
+header{
+    width: 100%;
+    height: 60px;
+    /* establecer la distancia entre líneas de texto */
+    line-height: 60px;
+    /* header quede fijo en la pagina web */
+    /* position:fixed ; */
+}
+
+header:hover{
+    background-color: var(--header);
+    transition: all 1s;
+}
+header a{
+    color: rgb(0, 0, 0);
+}
+header:hover a{
+    color: var(--ahover);
+}
+header:hover h2{
+    color:var(--ahover);
+}
+header:hover i{
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3pc;
+    padding-right: 3pc;
+}
+#logo img{
+    width: 23px;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    z-index: 1;/*Le da una prioridad a un elemento*/
+    background-color: white;
+}
+
+
+/* div que contiene el icono y titulo de página */
+#logo{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo i{
+    color: #C79491;
+    font-size: 20px;
+}
+
+/* dimenciones de las section */
+.bloques{
+    width: 100%;
+    height: 610px;
+}
+/* Sesion #1 */
+#bloque1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bloque1);
+    gap: 10pc;
+}
+
+#bloque_derecho img{
+     width: 400px;
+     border-radius: 20%;
+}
+#bloque_derecho{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloque_izquierdo{
+    width: 40%;
+    padding-left: 80px;
+    /* padding-top: 30px; */
+    
+}
+#bloque_izquierdo h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#bloque2{
+    background-color: var(--bloque2);
+    display: flex;
+    gap: 4pc;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#slider{
+    width: 70%;
+    overflow-x: scroll;
+    display: flex;
+    gap:20px
+}
+#slider::-webkit-scrollbar{
+    display: none;
+}
+#slider img{
+    width: 200px;
+    height: 200px;
+}
+#bloque2 h2{
+    font-size: 50px;
+}
+#bloque3{
+    background-color: var(--bloque3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bloque3_img img{
+   width: 80px;
+}
+#bloque3_izquierdo{
+    width: 35%;
+    padding-left: 80px;
+}
+#bloque3_izquierdo h2{
+    font-size: 42px;
+    margin-bottom:10px ;
+    color: var(--h2bloque3);
+    text-transform:uppercase;
+}
+#bloque3_derecho{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bloque3_derecho img{
+    width: 400px;
+    border-radius: 30px;
+}
+#bloque3 p{ 
+    margin-bottom: 20px;
+}
+#bloque4{
+    background-color: var(--bloque4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bloque4_izquierdo{
+    width: 35%;
+    padding-left: 80px;
+}
+#bloque4_izquierdo h2{
+    font-size: 42px;
+    margin-bottom:10px ;
+    color:var(--h2bloque4);
+    text-transform:uppercase;
+}
+#bloque4_derecho{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #bloque4_derecho img{
+      width: 400px;
+      border-radius: 30px;
+  }
+
+#bloque4 p{
+    margin-bottom: 20px;
+}
+footer{
+    height: 250px;
+    background-color:var(--footer);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--ahover);
+
+}
+#iconos_pie i{
+    font-size: 17px;
+}
+#iconos_pie{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+#iconos_pie:is(:hover, :focus) {
+    transform: scale(1.1);
+    transition: all ease 0.2s;
+}
+#conos_pie:is(:hover, :focus) .img{
+    width: 170px;
+
+}
+
+
+
+
